@@ -1,0 +1,94 @@
+/*header-container__top*/
+
+.header-container__top
+	display flex
+	align-items center
+	padding 17px 0 21px
+	
+/*header-container__bottom*/
+	
+.header-container__bottom
+	border 1px solid transparent
+
+span.logo
+	padding-right 13px
+	color logoColor
+	text-transform uppercase
+	font-family logoFont
+	font-size rem(90)
+	
+span.slogan
+	color SloganColor
+	font-family sloganFont
+	font-size rem(30)
+	
+/*sandwich-menu*/
+
+.sandwich-menu
+	position relative
+	display none
+	width 41px
+	height 38px
+	margin 10px
+	border 1px solid NavBarTextColor
+	border-radius 5px
+	cursor pointer
+
+	& span
+		position absolute
+		display block
+		width 70%
+		height 4px
+		background-color NavBarTextColor
+		border-radius 2px
+		opacity 1
+		transition all 0.5s
+		
+	& span:last-child
+		margin-bottom 0
+		
+	.sandwich-menu-top
+		opacity 1
+		top 6px
+		left 6px
+	.sandwich-menu-middle
+		top 16px
+		left 6px
+	.sandwich-menu-bottom
+		top 16px
+		left 6px
+
+	&.active
+		.sandwich-menu-top
+			opacity 0
+		.sandwich-menu-middle
+			transform rotate(44deg)
+		.sandwich-menu-bottom
+			transform rotate(-45deg)
+
+/*sandwich-menu end*/
+
+/*Menu*/
+
+ul.header-container__nav
+	width 758px
+	margin 0 auto
+	display flex
+	background-color NavBarColor
+	
+	li
+		padding 23px 23px 22px
+		border-right 1px solid NavBarLineColor
+
+		&:hover
+			border-bottom 3px solid NavBarHoverColor
+			padding-bottom 19px
+		a
+			color NavBarTextColor
+			font-family NavBarFont
+			font-size rem(14)
+			
+			&:hover
+				color NavBarHoverColor
+				
+/*Menu end*/
