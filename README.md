@@ -1,5 +1,4 @@
-Для запуска шаблона нужно выполнить следующие шаги
+Для запуска нужно выполнить следующие шаги
 
-1. git clone https://github.com/FARCER/gulp4start
-2. npm i
-3. gulp
+1. npm i
+2. gulp
